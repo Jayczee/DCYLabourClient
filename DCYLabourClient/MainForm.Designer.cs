@@ -42,6 +42,10 @@
             this.picBtnAc = new System.Windows.Forms.PictureBox();
             this.panelHead = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.rtBoxSysInfo = new DCYLabourClient.RichTextBoxTM();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSelectTask = new System.Windows.Forms.Button();
+            this.btnExitTask = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnTask)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnTool)).BeginInit();
@@ -52,6 +56,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btnExitTask);
+            this.groupBox1.Controls.Add(this.btnSelectTask);
+            this.groupBox1.Controls.Add(this.rtBoxSysInfo);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.rtBoxSecCard);
             this.groupBox1.Controls.Add(this.labelSecCard);
             this.groupBox1.Controls.Add(this.rtBoxMainCard);
@@ -68,7 +76,6 @@
             // 
             // rtBoxSecCard
             // 
-            this.rtBoxSecCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtBoxSecCard.Font = new System.Drawing.Font("楷体", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rtBoxSecCard.Location = new System.Drawing.Point(12, 365);
             this.rtBoxSecCard.MaxLength = 100;
@@ -91,7 +98,6 @@
             // 
             // rtBoxMainCard
             // 
-            this.rtBoxMainCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtBoxMainCard.Font = new System.Drawing.Font("楷体", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rtBoxMainCard.Location = new System.Drawing.Point(12, 237);
             this.rtBoxMainCard.MaxLength = 100;
@@ -114,7 +120,6 @@
             // 
             // rtBoxTasking
             // 
-            this.rtBoxTasking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtBoxTasking.Font = new System.Drawing.Font("楷体", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rtBoxTasking.Location = new System.Drawing.Point(12, 111);
             this.rtBoxTasking.MaxLength = 100;
@@ -194,6 +199,46 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "重庆市第三十八中学   智慧劳动教育管理终端";
             // 
+            // rtBoxSysInfo
+            // 
+            this.rtBoxSysInfo.Font = new System.Drawing.Font("楷体", 21F);
+            this.rtBoxSysInfo.Location = new System.Drawing.Point(14, 489);
+            this.rtBoxSysInfo.MaxLength = 100;
+            this.rtBoxSysInfo.Name = "rtBoxSysInfo";
+            this.rtBoxSysInfo.ReadOnly = true;
+            this.rtBoxSysInfo.Size = new System.Drawing.Size(420, 313);
+            this.rtBoxSysInfo.TabIndex = 7;
+            this.rtBoxSysInfo.Text = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("黑体", 25F);
+            this.label2.Location = new System.Drawing.Point(8, 442);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(185, 34);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "系统信息：";
+            // 
+            // btnSelectTask
+            // 
+            this.btnSelectTask.Location = new System.Drawing.Point(6, 808);
+            this.btnSelectTask.Name = "btnSelectTask";
+            this.btnSelectTask.Size = new System.Drawing.Size(430, 69);
+            this.btnSelectTask.TabIndex = 8;
+            this.btnSelectTask.Text = "领取任务";
+            this.btnSelectTask.UseVisualStyleBackColor = true;
+            this.btnSelectTask.Click += new System.EventHandler(this.btnSelectTask_Click);
+            // 
+            // btnExitTask
+            // 
+            this.btnExitTask.Location = new System.Drawing.Point(6, 895);
+            this.btnExitTask.Name = "btnExitTask";
+            this.btnExitTask.Size = new System.Drawing.Size(430, 69);
+            this.btnExitTask.TabIndex = 9;
+            this.btnExitTask.Text = "结束任务";
+            this.btnExitTask.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -241,6 +286,10 @@
         private System.Windows.Forms.PictureBox picBtnAc;
         private System.Windows.Forms.Panel panelHead;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSelectTask;
+        private RichTextBoxTM rtBoxSysInfo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnExitTask;
     }
 }
 

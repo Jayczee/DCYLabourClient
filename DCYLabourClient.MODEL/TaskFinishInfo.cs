@@ -23,6 +23,7 @@ namespace DCYLabourClient.MODEL
         private string _longGou3 = "";
         private string _longGou4 = "";
         private string _longGou5 = "";
+        private string _zhengDiPicURL = "";
         private string _ceLiangTime = "";
         private string _huanJingTemp = "";
         private string _huanJingWet = "";
@@ -87,5 +88,6 @@ namespace DCYLabourClient.MODEL
         public int ZuoWuNum2 { get => _zuoWunUM2; set => _zuoWunUM2 = value; }
         public string ZuoWuShouHuo { get => _zuoWuShouHuo; set => _zuoWuShouHuo = value; }
         public string ZuoWuPicURL { get => _zuoWuPicURL; set => _zuoWuPicURL = value; }
+        public string ZhengDiPicURL { get => _zhengDiPicURL; set => _zhengDiPicURL = value; }
     }
 }

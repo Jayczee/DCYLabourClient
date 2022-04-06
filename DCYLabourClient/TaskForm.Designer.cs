@@ -55,7 +55,7 @@
             this.txtTuRangWet = new DCYLabourClient.RichTextBoxTM();
             this.txtTuRangTemp = new DCYLabourClient.RichTextBoxTM();
             this.txtHuanJingWet = new DCYLabourClient.RichTextBoxTM();
-            this.txtHuanJingTime = new DCYLabourClient.RichTextBoxTM();
+            this.txtHuanJingTemp = new DCYLabourClient.RichTextBoxTM();
             this.txtCeLiangTime = new DCYLabourClient.RichTextBoxTM();
             this.txtTuRangPicURL = new DCYLabourClient.RichTextBoxTM();
             this.txtCuoShiPicURL = new DCYLabourClient.RichTextBoxTM();
@@ -312,14 +312,14 @@
             this.txtHuanJingWet.TabIndex = 23;
             this.txtHuanJingWet.Text = "";
             // 
-            // txtHuanJingTime
+            // txtHuanJingTemp
             // 
-            this.txtHuanJingTime.Location = new System.Drawing.Point(377, 448);
-            this.txtHuanJingTime.Multiline = false;
-            this.txtHuanJingTime.Name = "txtHuanJingTime";
-            this.txtHuanJingTime.Size = new System.Drawing.Size(159, 36);
-            this.txtHuanJingTime.TabIndex = 22;
-            this.txtHuanJingTime.Text = "";
+            this.txtHuanJingTemp.Location = new System.Drawing.Point(377, 448);
+            this.txtHuanJingTemp.Multiline = false;
+            this.txtHuanJingTemp.Name = "txtHuanJingTemp";
+            this.txtHuanJingTemp.Size = new System.Drawing.Size(159, 36);
+            this.txtHuanJingTemp.TabIndex = 22;
+            this.txtHuanJingTemp.Text = "";
             // 
             // txtCeLiangTime
             // 
@@ -511,7 +511,7 @@
             this.Controls.Add(this.txtTuRangWet);
             this.Controls.Add(this.txtTuRangTemp);
             this.Controls.Add(this.txtHuanJingWet);
-            this.Controls.Add(this.txtHuanJingTime);
+            this.Controls.Add(this.txtHuanJingTemp);
             this.Controls.Add(this.txtCeLiangTime);
             this.Controls.Add(this.txtZhengDiPicURL);
             this.Controls.Add(this.txtFanDiPicURL);
@@ -572,7 +572,7 @@
         private RichTextBoxTM txtTuRangWet;
         private RichTextBoxTM txtTuRangTemp;
         private RichTextBoxTM txtHuanJingWet;
-        private RichTextBoxTM txtHuanJingTime;
+        private RichTextBoxTM txtHuanJingTemp;
         private RichTextBoxTM txtCeLiangTime;
         private RichTextBoxTM txtTuRangPicURL;
         private RichTextBoxTM txtCuoShiPicURL;
